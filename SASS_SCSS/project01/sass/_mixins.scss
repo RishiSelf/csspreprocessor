@@ -1,0 +1,29 @@
+@mixin profileImg($borderRadiusVal, $borderColorName) {
+    $imageSize: calc( 100% / 2.4); 
+    width: $imageSize;
+    height: $imageSize;
+    border-radius: $borderRadiusVal;
+    overflow: hidden;
+    margin: 10px 0;
+    
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: $borderRadiusVal;
+        border: 2px solid $borderColorName;
+    }
+}
+@mixin dis-flex-content($justifyContentVal, $alignItemVal, $flexDirectionVal) {
+    display: flex;
+    justify-content: $justifyContentVal;
+    align-items: $alignItemVal;
+    flex-direction: $flexDirectionVal;
+}
+@mixin text-color($textColor) {
+    color: $textColor;
+}
+
+@mixin custom-bg-color($customBgColor) {
+    background-color: $customBgColor;
+}

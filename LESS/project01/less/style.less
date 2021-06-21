@@ -1,0 +1,62 @@
+/*******************************************
+  LESS Tutorials
+  ** LESS => Leaner StyleSheets
+-----------------------------------------
+    1. Operators
+    2. Variables
+    3. Nesting
+    4. Mixin or Functions
+    5. Parameters
+*****************************************/
+@import "variables.less";  
+@import "mixins.less";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: @bodyBgColor;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+
+a { color: @link-color; }
+a:hover { color: @link-color-hover; }
+
+
+aside.left-side-frame {
+    width: calc(100vw / 4);
+    min-height: 100vh;
+    background-color: @primaryBgColor;
+
+    header {
+        #disFlex.dflex(flex);
+        #disFlex.justifyContent(center);
+        #disFlex.alignItem(center);
+        #disFlex.flexDirection(column);
+        padding: @space15v;
+
+        .image-frame {
+            #imgframe.inner();
+            #imgframe.br(50%);
+
+            img {
+                #imgframe.img();
+                #imgframe.br(50%);
+            }
+        }
+    }//header//
+
+    nav {
+        a {
+            #disFlex.dflex(flex);
+            #disFlex.justifyContent(center);
+            #disFlex.alignItem(center);
+            #disFlex.flexDirection(column);
+            padding: @space10v;
+        }
+    }//Nav//
+}//aside.left-side-frame//
+
+

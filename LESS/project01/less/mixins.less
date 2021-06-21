@@ -1,0 +1,31 @@
+//Image Frame
+#disFlex() {
+    .dflex(@val) { 
+        display: @val;
+    }
+    .justifyContent(@val) {
+        justify-content: @val;
+    }
+    .alignItem(@val) {
+        align-items: @val;
+    }
+    .flexDirection(@val){
+        flex-direction: @val;
+    }
+}
+#imgframe() {
+    .inner() {    
+        width: calc(100% / 2.4);
+        height: calc(100% / 2.4);
+        overflow: hidden;
+        position: relative;
+    }
+    .br(@br) {
+        border-radius: @br;
+    }
+    .img() {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+}

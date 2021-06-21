@@ -1,0 +1,213 @@
+/*******************************************
+  SASS or SCSS both are same, but 
+    **SASS - CSS    
+    **SCSS - CSS3
+-----------------------------------------
+    1. Operators
+    2. Variables
+    3. Nesting
+    4. Mixin
+    5. Parameters
+*****************************************/
+/* border-radius */
+/***************************************
+    CSS Elements
+******************************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #239AEF;
+  text-decoration: none;
+}
+
+aside {
+  width: calc(100% / 4);
+  min-height: calc(100% * 1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: #005EA2;
+}
+
+aside header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+aside header .image-frame {
+  width: calc( 100% / 2.4);
+  height: calc( 100% / 2.4);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+aside header .image-frame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #e9e9e9;
+}
+
+aside header h1.title {
+  color: #030303;
+  font-size: 2rem;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+aside header h3.sub-title {
+  color: #b8b8b8;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+aside nav {
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+
+aside nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  color: #c9c9c9;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+aside nav a:hover {
+  color: #000;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.right-side-frame {
+  width: calc(100% - calc(100% / 4));
+  min-height: 100vh;
+  background: #c0c0c0;
+  left: calc(100% / 4);
+  top: 0;
+  position: relative;
+}
+
+.right-side-frame .content-section {
+  padding: 20px 20px;
+  background-color: none;
+}
+
+.right-side-frame .content-section h2.title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 15px 0 10px;
+  position: relative;
+  color: #0075C9;
+}
+
+.right-side-frame .content-section h2.title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #303030;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.right-side-frame .content-section article {
+  padding: 20px 0;
+}
+
+.right-side-frame .content-section article p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #303030;
+  padding: 10px 0;
+}
+
+.right-side-frame .profile-section {
+  background-color: #fff;
+}
+
+.right-side-frame .image-content-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 40px 0 20px;
+}
+
+.right-side-frame .image-content-frame .pic-frame {
+  width: calc( 100% / 2.4);
+  height: calc( 100% / 2.4);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+  margin: 20px 0;
+}
+
+.right-side-frame .image-content-frame .pic-frame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid #707070;
+}
+
+.right-side-frame .image-content-frame .pic-frame + article {
+  width: 65%;
+  margin-left: 20px;
+}
+/*# sourceMappingURL=main.css.map */

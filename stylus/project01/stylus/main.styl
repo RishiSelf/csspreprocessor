@@ -1,0 +1,72 @@
+//Variables//
+primaryBg = #2b2d42;
+
+primaryTextColor = #f8f9fa
+
+lightLinkColor() 
+    line-height: 1.5
+    color: #edf2f4
+    &:hover 
+       color: #d90429
+
+space10v = 10px
+space15v = 15px
+space20v = 20px
+
+dflex(dValue, jCValue, aIValue, fDValue)
+    display: dValue
+    justify-content: jCValue
+    align-items: aIValue
+    flex-direction: fDValue
+
+imageContainer()
+    width: calc(100% / 2.3)
+    height: calc(100% / 2.3)
+    position: relative
+    margin: 20px auto
+    border-radius: 50%
+
+    img
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        border: 2px solid #fff
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+a
+    text-decoration: none
+    transition: 0.6s ease-In-Out;
+html
+    font: 1rem "Lucida Grande", Arial, sans-serif
+
+body
+    background: #f1f1f1
+
+.page-container
+    dflex : flex, space-between, inherit, row
+
+    aside.left-side-frame
+        background: primaryBg
+        color: primaryTextColor
+        max-width: calc(100vw / 4)
+
+        header
+            dflex : flex, center, center, column
+
+            .image-frame
+                imageContainer()
+
+                
+
+        nav
+            dflex : flex, center, center, column
+            padding-top: space20v
+
+            a
+                lightLinkColor()
+                line-height: 2
+            

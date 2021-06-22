@@ -23,35 +23,93 @@ a {
 a:hover {
   color: #32fb9a;
 }
-aside.left-side-frame {
-  width: calc(100vw / 4);
+.page-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.page-container aside.left-side-frame {
+  max-width: calc(100vw / 4);
   min-height: 100vh;
   background-color: #21C489;
 }
-aside.left-side-frame header {
+.page-container aside.left-side-frame header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 15px;
 }
-aside.left-side-frame header .image-frame {
+.page-container aside.left-side-frame header .image-frame {
   width: calc(100% / 2.4);
   height: calc(100% / 2.4);
   overflow: hidden;
   position: relative;
   border-radius: 50%;
 }
-aside.left-side-frame header .image-frame img {
+.page-container aside.left-side-frame header .image-frame img {
   width: 100%;
   height: 100%;
   position: relative;
   border-radius: 50%;
 }
-aside.left-side-frame nav a {
+.page-container aside.left-side-frame nav a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 10px;
+}
+.page-container .right-side-frame {
+  padding: 15px;
+  margin-left: 15px;
+}
+.page-container .right-side-frame .content-section h2.title {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 10px;
+}
+.page-container .right-side-frame .content-section h2.title::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #21C489;
+}
+.page-container .right-side-frame .content-section article {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.page-container .right-side-frame .content-section article p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+.page-container .right-side-frame .content-section .image-content-frame {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.page-container .right-side-frame .content-section .image-content-frame .pic-frame {
+  margin-top: 15px;
+  width: calc(100% / 2.4);
+  height: calc(100% / 2.4);
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.page-container .right-side-frame .content-section .image-content-frame .pic-frame img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px;
+}
+.page-container .right-side-frame .content-section .image-content-frame .pic-frame + article {
+  max-width: 80%;
+  margin-left: 20px;
 }
